@@ -1,13 +1,9 @@
-// import iconConfig from '@/assets/icons/selection.json'
 import createIconSetFromIcoMoon from '@expo/vector-icons/createIconSetFromIcoMoon'
 import { ThemeColors } from '../theme/theme'
 import { useAppTheme } from '../theme/useAppTheme'
 
 const IconFromIcoMoon = createIconSetFromIcoMoon(require('@/assets/icons/selection.json'), 'IcoMoon', 'icomoon.ttf')
 
-// const IconNamme = iconConfig.icons.map((icon) => icon.properties.name)
-
-// console.log(IconNamme)
 export type IconProps = {
   name: IconName
   color?: ThemeColors
