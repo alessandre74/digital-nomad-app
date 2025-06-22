@@ -22,7 +22,6 @@ export function SearchInput({ value, onChangeText, placeholder }: SearchInputPro
         style={{
           ...textVariants.text16,
           color: colors.text,
-          // backgroundColor: 'green',
           height: '100%',
           width: '100%',
           flexShrink: 1,
@@ -39,6 +38,7 @@ const boxStyle: BoxProps = {
   padding: 's8',
   justifyContent: 'space-between',
   backgroundColor: 'gray1',
+  paddingLeft: 's16',
   height: 70,
   borderRadius: 'rounded',
   borderWidth: 2,
