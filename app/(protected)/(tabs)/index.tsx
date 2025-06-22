@@ -19,7 +19,7 @@ export default function HomeScreen() {
   const debouncedCityName = useDebounce(cityName)
   const [selectedCategoryId, setSelectedCategoryId] = useState<string | null>(null)
 
-  const { cityPreviewList } = useCities(debouncedCityName, selectedCategoryId)
+  const { cityPreviewList } = useCities({ name: debouncedCityName, categoryId: selectedCategoryId })
 
   const flatListRef = useRef(null)
   useScrollToTop(flatListRef)
