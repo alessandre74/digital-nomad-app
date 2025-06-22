@@ -13,10 +13,12 @@ export function CityFilter({ categories }: CityFilterProps) {
   const [selectedCategoryId, setSelectedCategoryId] = useState<string | null>(null)
   return (
     <Box>
-      <SearchInput value={name} onChangeText={setName} placeholder="Qual o seu destino?" />
+      <Box paddingHorizontal="padding">
+        <SearchInput value={name} onChangeText={setName} placeholder="Qual o seu destino?" />
+      </Box>
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-        <Box flexDirection="row" mt="s16" gap="s8">
+        <Box flexDirection="row" mt="s16" gap="s8" paddingHorizontal="padding">
           {categories.map((category) => (
             <CategoryPill key={category.id} active={category.id === selectedCategoryId} category={category} />
           ))}
